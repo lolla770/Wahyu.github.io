@@ -1,0 +1,153 @@
+<head>
+    <link rel="icon" href="https://example.com/wifi-logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Simulasi Jaringan Wi-Fi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistem Simulasi Jaringan Wi-Fi yang interaktif dan mudah digunakan.">
+    <meta name="keywords" content="Wi-Fi, simulasi, jaringan, sistem, interaktif">
+    <title>Sistem Simulasi Jaringan Wi-Fi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistem Simulasi Jaringan Wi-Fi</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Simulasi Jaringan Wi-Fi</h1>
+    </header>
+    <main>
+        <section id="login-area">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Masuk</button>
+            </form>
+        </section>
+        <section id="simulation-area" style="display:none;">
+            <h2>Simulasikan Jaringan Wi-Fi Anda</h2>
+            <div id="network-settings">
+                <!-- Form pengaturan jaringan akan ditempatkan di sini -->
+            </div>
+            <button id="start-simulation">Mulai Simulasi</button>
+        </section>
+        <section id="results" style="display:none;">
+            <h2>Hasil Simulasi</h2>
+            <div id="output">
+                <!-- Hasil simulasi akan ditampilkan di sini -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistem Simulasi Jaringan Wi-Fi</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script>
+        // Kode JavaScript di sini
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Validasi login sederhana
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    if (username === 'wahyuu' && password === '123') {
+        document.getElementById('login-area').style.display = 'none';
+        document.getElementById('simulation-area').style.display = 'block';
+        document.getElementById('results').style.display = 'block';
+    } else {
+        alert('Nama pengguna atau kata sandi salah');
+    }
+});
+</script>
+</body>
+</body>
+</html>    <script src="js/app.js"></script>
+    <script>
+        // Kode JavaScript di sini
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validasi login sederhana
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'wahyuu' && password === '123') {
+                document.getElementById('login-area').style.display = 'none';
+                document.getElementById('simulation-area').style.display = 'block';
+                document.getElementById('results').style.display = 'block';
+            } else {
+                alert('Nama pengguna atau kata sandi salah');
+            }
+        });
+
+        document.getElementById('start-simulation').addEventListener('click', function() {
+            // Contoh simulasi sederhana
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Simulasi jaringan Wi-Fi sedang berjalan...</p>';
+            
+            setTimeout(function() {
+                output.innerHTML += '<p>Simulasi selesai. Jaringan Wi-Fi berfungsi dengan baik.</p>';
+            }, 3000); // Simulasi berlangsung selama 3 detik
+        });
+    </script>
+</body>
+</html>
